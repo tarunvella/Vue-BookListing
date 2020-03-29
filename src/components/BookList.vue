@@ -10,9 +10,12 @@
 </template>
 
 <script>
+
+  import BookItem from './BookItem';
     export default {
         name: "BookList",
-      data() {
+        components: BookItem,
+        data() {
           return {
             title: 'All Books',
             books: [
