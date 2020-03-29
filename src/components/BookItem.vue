@@ -1,5 +1,5 @@
 <template>
-    {{book.title}} : {{ book.author}}
+    <li>{{book.title}} : {{ book.author}}</li>
 </template>
 
 <script>
@@ -11,4 +11,8 @@
 
 <style scoped>
 
+  li {
+    display: block;
+    margin: 0 10px;
+  }
 </style>
