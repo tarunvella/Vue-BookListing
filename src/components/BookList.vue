@@ -14,7 +14,9 @@
   import BookItem from './BookItem';
     export default {
         name: "BookList",
-        components: BookItem,
+        components: {
+          BookItem
+        },
         data() {
           return {
             title: 'All Books',
