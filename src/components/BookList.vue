@@ -4,7 +4,7 @@
     {{title}}
   </h1>
   <ul>
-    <li v-for = "book in books"></li>
+    <book-item v-for = "book in books" v-bind:book="book"></book-item>
   </ul>
 </div>
 </template>
@@ -15,7 +15,7 @@
     export default {
         name: "BookList",
         components: {
-          BookItem
+          BookItem,
         },
         data() {
           return {
