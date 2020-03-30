@@ -32,7 +32,14 @@
     },
       methods: {
         appendBook(bookTitle, bookAuthor) {
-
+/*          let bookObject = {};
+          bookObject.title = bookTitle;
+          bookObject.author = bookAuthor;
+          this.books.push(bookObject);*/
+          this.books.push({
+            title:bookTitle,
+            author: bookAuthor
+          });
         }
       }
     }
