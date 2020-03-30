@@ -18,7 +18,7 @@
     },
     methods: {
       bookSubmit(bookTitle, bookAuthor) {
-        this.$emit('add-book', bookTitle, bookAuthor);
+        this.$emit('addBook', bookTitle, bookAuthor);
       }
     }
   }
