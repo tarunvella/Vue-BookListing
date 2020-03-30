@@ -6,7 +6,7 @@
   <ul>
     <book-item v-for = "book in books" v-bind:book="book"></book-item>
   </ul>
-  <book-form></book-form>
+  <book-form v-on:addBook="appendBook"></book-form>
 </div>
 </template>
 
@@ -29,7 +29,12 @@
               {title: 'Amusing Ourselves to Death', author: 'Neil Postman'},
             ]
           }
-    }
+    },
+      methods: {
+        appendBook(bookTitle, bookAuthor) {
+
+        }
+      }
     }
 </script>
 
