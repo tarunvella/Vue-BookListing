@@ -1,7 +1,7 @@
 <template>
   <form v-on:submit.prevent="bookSubmit(bookTitle, bookAuthor)" action="#" method="post">
     <input v-model="bookTitle" type="text" name="title" placeholder="Book Title">
-    <input type="text" name="author" placeholder="Book Author">
+    <input v-model="bookAuthor" type="text" name="author" placeholder="Book Author">
     <button type="submit" >Add Book</button>
   </form>
 </template>
