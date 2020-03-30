@@ -15,6 +15,9 @@
         bookTitle: '',
         bookAuthor: ''
       }
+    },
+    methods: {
+
     }
   }
 </script>
